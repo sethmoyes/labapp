@@ -1,6 +1,6 @@
 //Why cant terraform find the vpc?
 data "aws_vpc" "vpc" {
-  id = var.vpc_id
+  id = module.networking.aws_vpc_id
 }
 
 resource "aws_security_group" "allow_http" {
