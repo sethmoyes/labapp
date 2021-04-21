@@ -1,7 +1,6 @@
+//Why cant terraform find the vpc?
 data "aws_vpc" "vpc" {
-    tags = {
-        "Environment" = "${var-environment}"
-    }
+  id = var.vpc_id
 }
 
 resource "aws_security_group" "allow_http" {
