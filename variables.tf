@@ -5,5 +5,5 @@ variable "region" {
 
 variable "vpc_id" {
   description = "Which VPC are we in?"
-  default     = "vpc-744f610c"
+  default     = "vpc-a4a368dc"
 }

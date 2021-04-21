@@ -1,6 +1,6 @@
 data "aws_vpc" "vpc" {
   filter = {
-      "Name" = "${var.envrionment}-vpc"
+      "Name" = "${var.environment}-vpc"
   }
 }
 
